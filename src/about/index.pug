@@ -1,4 +1,5 @@
-extends _component/layout/base
+extends ../_component/layout/base
+//- I changed the name for this file from "about.pug" in "index.pug"
 
 block config
     -
@@ -13,7 +14,7 @@ block content
             li load and render on the client is blazing fast, most of the time it happens quicker than you can blink, for real!
             li
                 figure.image-container
-                    img.image(src="/asset/image/true.jpg")
+                    img.image(src="/asset/image/blazing-fast-load.jpg")
             
             li Quick Blog allows you to build HTML pages quickly and painless.
             li It makes use of PUG (former JADE) template language to generate HTML and SASS (SCSS) to power up CSS
