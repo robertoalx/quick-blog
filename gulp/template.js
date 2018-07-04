@@ -73,7 +73,7 @@ const template = ({
         .on('error', error => {
           console.error(error);
         })
-        // Check if embed.css exists and use inlineSource to inject it
+        // Check if embed.css exists and use embedSource to inject it
         .pipe(plugins.if(
           fs.existsSync(embedPath),
           plugins.inlineSource({

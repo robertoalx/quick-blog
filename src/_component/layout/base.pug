@@ -5,6 +5,8 @@ html
         title=title
         meta(name="description", content=description)
         link(rel="stylesheet", href="/style.css")
+        if config.entry.css.embed
+            link(rel="stylesheet", href=`${embedPath}` inline)
         //- link(href="https://fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
     body
         include ../welcome/welcome
