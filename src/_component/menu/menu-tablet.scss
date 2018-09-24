@@ -6,11 +6,11 @@
     // }
 
     .menu__panel {
-        margin: 0.5rem;
+        // margin: 0.5rem;
         &:first-of-type {
             grid-column: 1/2;
         }
-        &::first-of-type {
+        &:last-of-type {
             grid-column: 2/3;
         }
     }
